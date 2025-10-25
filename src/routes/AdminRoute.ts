@@ -1,0 +1,31 @@
+import express, {Request, Response, NextFunction, Router} from 'express'; 
+import {AllGetSuppliers,UpdateAdmin,UpdateAgentMargin,DeleteAgentMargin,GetAgentMargin,CreateAgentMargin,UpdateMarginData,GetAllBooking,GetMarginData,DeleteMarginData,CreateMargindata,AllAgentRecords,SupplierSingleView,ResetAdminPassword,AgentSingleView,DestroyAdmin,ForgetAdminPassword,ChangeSupplierApprovalStatus,ChangeAgentApprovalStatus, AllAdminRecords,CreateAdmins } from "../controllers/AdminController";
+import { AgentMail } from "../controllers/EmailotpsController"; 
+import {SupplierMail} from "../controllers/EmailotpsController";
+const router = express.Router(); 
+
+router.post('/create',CreateAdmins); 
+router.put('/UpdateAdmin/:id',UpdateAdmin);
+router.post('/ResetAdminPassword',ResetAdminPassword);
+router.post('/ForgetAdminPassword',ForgetAdminPassword);
+router.get('/AllAgentRecords',AllAgentRecords);
+router.get('/AgentSingleView/:id',AgentSingleView);
+router.get('/AllGetSuppliers',AllGetSuppliers); 
+router.get('/AllAdminRecords',AllAdminRecords);
+router.delete('/DestroyAdmin/:id',DestroyAdmin); 
+router.put('/ChangeAgentApprovalStatus/:id',ChangeAgentApprovalStatus); 
+router.put('/ChangeSupplierApprovalStatus/:id',ChangeSupplierApprovalStatus);
+router.post('/ApprovedAgentMail',AgentMail); 
+router.post('/ApprovedSupplierMail',SupplierMail);
+router.get('/SupplierSingleView/:id',SupplierSingleView);
+router.post('/CreateMargindata',CreateMargindata);
+router.get('/GetMarginData',GetMarginData);
+router.put('/UpdateMarginData/:id',UpdateMarginData);
+router.delete('/DeleteMarginData/:id',DeleteMarginData);
+router.post('/CreateAgentMargin',CreateAgentMargin);
+router.get('/GetAgentMargin',GetAgentMargin);
+router.delete('/DeleteAgentMargin/:id',DeleteAgentMargin);
+router.put('/UpdateAgentMargin/:id',UpdateAgentMargin);
+router.get("/GetAllBooking",GetAllBooking); 
+export {router as AdminRoute };  
+
