@@ -9,7 +9,7 @@ import { CloudinaryStorage } from 'multer-storage-cloudinary';
 const multer = require('multer');
 import fs from 'fs';
 import path from 'path';
-const uploadDir = "/uploads";
+const uploadDir = "/uploads2";
 
 
 
