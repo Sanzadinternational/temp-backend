@@ -4,14 +4,14 @@
       "src": "./index.ts",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["src/**/*"],   // optional: include your other files
+        "includeFiles": ["src/**/*"],  
         "tscOptions": {
-          "noEmitOnError": false        // ✅ allow JS emit even if TS errors exist
+          "noEmitOnError": false      
         }
       }
     }
   ],
-  "buildCommand": "tsc --noEmitOnError false",  // ✅ tell Vercel to ignore TS errors
+  "buildCommand": "tsc --noEmitOnError false", 
   "routes": [
     {
       "src": "/(.*)",
