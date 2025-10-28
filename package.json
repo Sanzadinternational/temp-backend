@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-      "build": "tsc --noEmitOnError false || true",
-    "start": "node dist/index.js",
-    "dev": "ts-node --transpile-only src/index.ts",
+      "start": "tsx index.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx ./migration.ts"
   },
