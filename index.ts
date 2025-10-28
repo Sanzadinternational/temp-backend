@@ -59,7 +59,7 @@ app.use('/api/V1/data', CountryRoute);
 app.use('/api/V1/uploads', express.static('/uploads'));
 
 // Start Server
-server.listen(4000, () => {
+server.listen(3002, () => {
   console.clear();
   console.log("Server is running on port 8000");
 });
