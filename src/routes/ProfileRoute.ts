@@ -4,7 +4,7 @@ import authMiddleware from '../middlewares/authMiddleware';
 const multer = require('multer');
 import fs from 'fs';
 import path from 'path';
-const uploadDir = "/uploads";
+const uploadDir = "/data/coolify/uploads2";
 
 // Configure Multer
 const storage = multer.diskStorage({
