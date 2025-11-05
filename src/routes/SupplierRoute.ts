@@ -6,7 +6,7 @@ import { CreateSupplier,SupplierDocumentsData,CreateDriver,DeleteSupplierApi,Get
 import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
-const uploadDir = "/uploads2";
+const uploadDir = "/data/coolify/uploads2";
 
 // Configure Multer
 const storage = multer.diskStorage({
